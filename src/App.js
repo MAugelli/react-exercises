@@ -2,7 +2,7 @@ import Welcome from "./components/Welcome";
 
 const App = () => {
   return ( <div>
-     <Welcome />
+     <Welcome name="Mark" age={25} />
   </div> );
 }
  

@@ -5,7 +5,7 @@ const App = () => {
     {/* visibili entrambi i componenti Welcome e Age */}
      <Welcome name={<strong>Mark</strong>} age={25} />
      {/* visibile solo i componente Welcome */}
-     <Welcome name={<strong>Bob</strong>} age={16} />
+     <Welcome name={<strong>Bob</strong>} />
   </div> );
 }
  

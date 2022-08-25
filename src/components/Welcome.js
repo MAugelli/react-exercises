@@ -1,6 +1,6 @@
 function Welcome(props){
     return (<div>
-        <h1>Hello, {props.name}!</h1> 
+        <p>Hello, {props.name}!</p> 
         <p>Your age is {props.age}</p>
     </div>
     );   

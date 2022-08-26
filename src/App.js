@@ -1,11 +1,9 @@
-import Welcome from "./components/Welcome";
+import Counter from "./components/Counter";
+
 
 const App = () => {
   return (<div>
-    {/* componente Age renderizza "You are very young!" */}
-    <Welcome name={"Mark"} age={16} />
-    {/* omponente Age renderizza "Your age is 70" */}
-    <Welcome name={"John"} age={70} />
+    <Counter />
   </div>);
 }
 

@@ -5,9 +5,20 @@ class Counter extends React.Component {
         count: this.props.initialValue
      } 
 
-     constructor(props){
-        super(props)
+    //  constructor(props){
+    //     super(props)
 
+    //     setInterval(() => {
+    //         this.setState((state)=>{
+    //            return{
+    //             count: state.count + this.props.incrementBy
+    //            }
+    //         })
+    //     }, this.props.timeOut);
+    //  }
+
+    // sembra che il costrutore non serva più :)
+    componentDidMount(){
         setInterval(() => {
             this.setState((state)=>{
                return{
@@ -15,7 +26,7 @@ class Counter extends React.Component {
                }
             })
         }, this.props.timeOut);
-     }
+    }
 
     render() { 
         return (

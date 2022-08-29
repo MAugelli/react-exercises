@@ -1,10 +1,9 @@
-import Welcome from "./components/Welcome";
+import Hello from "./components/Hello";
 
 const App = () => {
   return ( <div>
-     <Welcome name="Mark"/>
-  </div> );
+    <Hello/>
+  </div> ); 
 }
- 
+
 export default App;
- 

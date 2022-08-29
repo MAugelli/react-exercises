@@ -1,9 +1,5 @@
 const Hello = () => {
-    return ( <div>
-        <h1>Hello, World</h1> 
-        <p>What a beautiful day!</p>
-        </div>
-     );   
+    return ( <h1>Hello, World</h1> );
 }
  
-export default Hello;
+export default Hello; 

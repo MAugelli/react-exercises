@@ -1,3 +1,4 @@
+import ClickCounter from "./components/ClickCounter";
 
 const App = () => {
     return ( 

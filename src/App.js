@@ -7,5 +7,5 @@ const App = () => {
     <Message/>
   </div> );
 }
- 
+
 export default App;

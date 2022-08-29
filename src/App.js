@@ -1,10 +1,9 @@
-import CounterDisplay from "./components/CounterDisplay";
-
+import Hello from "./components/Hello";
 
 const App = () => {
-  return (<div>
-    <CounterDisplay initialValue={10} incrementBy={5} timeOut={2000}/>
-  </div>);
+  return ( <div>
+    <Hello/>
+  </div> ); 
 }
 
 export default App;

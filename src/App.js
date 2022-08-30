@@ -1,8 +1,8 @@
-import ClickTracker from "./components/ClickTracker";
+
 
 const App = () => {
     return ( 
-        <ClickTracker />
+
     );
 }
  

@@ -1,10 +1,12 @@
-import ClickTracker from "./components/ClickTracker";
+import InteractiveWelcome from "./components/InteractiveWelcome";
+
 
 const App = () => {
     return ( 
-        <ClickTracker />
+    <InteractiveWelcome/>        
     );
 }
  
 export default App;
-
+ 
+ 

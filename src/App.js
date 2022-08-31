@@ -1,8 +1,9 @@
-import ClickTracker from "./components/ClickTracker";
+
+import UncontrolledLogin from "./components/UncontrolledLogin ";
 
 const App = () => {
     return ( 
-        <ClickTracker />
+        <UncontrolledLogin/>
     );
 }
  

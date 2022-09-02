@@ -12,7 +12,7 @@ class ToDoList extends React.Component {
             items: [...prevState.items, event.target.elements.ToDo.value]
         }))
     }
-
+ 
     render() {
         return (
             <div>

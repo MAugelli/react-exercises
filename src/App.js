@@ -1,9 +1,11 @@
-import InteractiveWelcome from "./components/InteractiveWelcome";
+import Container from "./components/Container";
 
 
 const App = () => {
     return ( 
-    <InteractiveWelcome/>        
+    <Container>
+      <h1>Hello Billy!</h1>
+    </Container>
     );
 }
  

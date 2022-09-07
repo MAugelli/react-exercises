@@ -1,10 +1,17 @@
-import Counter from "./Counter";
+import React from "react";
+class CounterDisplay extends React.Component {
 
-function CounterDisplay(props) {
-    return ( <h1>
-        Counter: <Counter initialValue={props.initialValue} incrementBy={props.incrementBy} timeOut={props.timeOut}/> 
-    </h1> 
-    )        
+    state = {
+        num: this.props.num,
+    } 
+    
+    render() {
+        return (
+            <h1>
+                Counter: {this.state.num}
+            </h1>
+        );
+    }
 }
 
 export default CounterDisplay;

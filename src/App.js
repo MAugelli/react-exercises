@@ -1,9 +1,9 @@
-import CounterDisplay from "./components/CounterDisplay";
+import Counter from "./components/CounterDisplay";
 
 
 const App = () => {
   return (<div>
-    <CounterDisplay initialValue={10} incrementBy={5} timeOut={2000}/>
+    <Counter initialValue={1} incrementBy={5} timeOut={2000}  />
   </div>);
 }
 

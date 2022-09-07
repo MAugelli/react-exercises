@@ -1,4 +1,5 @@
 import React from "react";
+import CounterDisplay from "CounterDisplay";
 
 class Counter extends React.Component {
     state = { 
@@ -16,11 +17,11 @@ class Counter extends React.Component {
             })
         }, this.props.timeOut);
      }
-
+ 
     render() { 
         return (
             <span>
-                {this.state.count}
+                <CounterDisplay />
             </span>
         );
     }

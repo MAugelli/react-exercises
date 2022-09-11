@@ -1,8 +1,9 @@
-import ClickTracker from "./components/ClickTracker";
+import GithubUser from "./components/GithubUser";
+
 
 const App = () => {
     return ( 
-        <ClickTracker />
+        <GithubUser username="MAugelli" />
     );
 }
  

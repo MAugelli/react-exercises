@@ -1,10 +1,10 @@
-import ClickTracker from "./components/ClickTracker";
+import GithubUserList from "./components/GithubUserList";
 
 const App = () => {
     return ( 
-        <ClickTracker />
+        <GithubUserList/>
     );
-}
+} 
  
 export default App;
 

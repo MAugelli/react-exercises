@@ -6,18 +6,15 @@ function Counter () {
         
 
         useEffect(()=>{
-            setInterval(() => {
-                increment ()
+            const _interval = setInterval(() => {
+                setCount((c) => c + 1)
             }, 2000)
 
-            // return() => {
-            //     clearInterval(_interval)
-            // }
-        },[count, increment])
+            return() => {
+                clearInterval(_interval)
+            }
+        },[])
 
-        function increment () {
-            setCount(count + 1)
-        }
 
         return (
             <span>

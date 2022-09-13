@@ -1,8 +1,13 @@
 import ClickCounter from "./components/ClickCounter";
 
+
+    function onCounterChange(i) {
+        console.log(i);
+    }
+
 const App = () => {
     return ( 
-      <ClickCounter />
+      <ClickCounter change={onCounterChange}/>
     );
 }
 

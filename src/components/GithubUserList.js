@@ -3,13 +3,9 @@ import GithubUser from "./GithubUser"
 
 function GithubUserList (){
     const [users, setUsers] = useState([])
-    // const [newUser, setNewUser] = useState(null)
 
     function handleAddItem(event){
         event.preventDefault()
-        // setNewUser(
-        //     event.target.elements.AddUser.value
-        // )
         setUsers([...users,  event.target.elements.AddUser.value])
     }
 

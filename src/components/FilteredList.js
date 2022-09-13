@@ -4,9 +4,10 @@ import data from "./data"
 function FilteredList() {
     const [users, setUsers] = useState([])
 
-    const list = data.filter(user => { return user.age > 18 })
+    // const list = useMemo(() => {data.filter(user => { return user.age > 18 })}) 
 
-    // useMemo(() => setUsers((users) => list))
+    const list =  data.filter(user => { return user.age > 18 })
+
     useEffect(() => {
         setUsers((users) => list)
 

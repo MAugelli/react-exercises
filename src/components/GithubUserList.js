@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import GithubUser from "./GithubUser"
 
 function GithubUserList (){
@@ -11,15 +12,18 @@ function GithubUserList (){
 
         return (
             <div>
+                <Link to="/"> Welcome</Link> | <Link to="/counter"> Counter </Link> | <Link to="/users"> GitHub user </Link> 
                 <form onSubmit={handleAddItem}>
                     <input type="text" name="AddUser" />
                     <button type="submit">Add</button>
                 </form>
+
                 {users.map(item =>{
                 return (
                     <div  key={Math.random()}>
 
-                        <GithubUser username={item}/>
+                        <Link to={`/users/${item}`} elements={<GithubUser username={item}/>}> {item}</Link>
+
                     </div>
                 )}
                 )}

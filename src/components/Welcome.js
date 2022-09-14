@@ -5,7 +5,7 @@ function Welcome(){
     return (
     <div>
         <h1>Hello, {user}!</h1> 
-        <Link to="/"> Welcome</Link> | <Link to="/counter"> Counter </Link> | <Link to="/users/:username"> GitHub user </Link> 
+        <Link to="/"> Welcome</Link> | <Link to="/counter"> Counter </Link> | <Link to="/users"> GitHub user </Link> 
     </div>
     );   
 }

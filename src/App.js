@@ -7,7 +7,7 @@ import Welcome from "./components/Welcome";
 const App = () => {
     return ( 
       <Routes>
-        <Route path="/" element={<Welcome name="Jimmy"/>} />
+        <Route path="/" element={<Welcome />} />
         <Route path="/counter" element={<ClickCounter/>} />
         <Route path="/users/:username" element={<GithubUser/>} />
       </Routes>

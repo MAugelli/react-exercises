@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function GithubUser() {
-    const {username} = useParams()
+    const {username = "MAugelli"} = useParams()
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
@@ -22,7 +22,6 @@ function GithubUser() {
             setUser(null)
         } finally {
             setLoading(false)
-            console.log(user);
         }
     }
 
@@ -35,6 +34,7 @@ function GithubUser() {
         {loading && <h1>Caricamento...</h1>}
         {user && <h1>{user.name}</h1>}
         {error && <h1>C'è stato un errore</h1>}
+        <Link to="/counter"> Counter </Link> | <Link to="/"> Welcome </Link>
     </div> );
 }
 

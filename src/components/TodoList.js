@@ -35,16 +35,11 @@ class ToDoList extends React.Component {
     }
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleAddItem}>
-                    <input type="text" name="ToDo" />
-                    <button type="submit">Add</button>
-                    <button type="reset" onClick={this.handleClearList}>Clear list</button>
-                </form>
+            
                 <div>
-                    {this.props.render(this.state.items,this.state.index,this.handleRemoveItem)}
+                    {this.props.render(this.state.items,this.state.index,this.handleRemoveItem,this.handleAddItem,this.handleClearList)}
                 </div>
-            </div>);
+        ) 
     }
 }
 

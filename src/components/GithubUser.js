@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-function GithubUser({username}) {
+function GithubUser() {
+    const {username} = useParams()
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
@@ -12,9 +14,11 @@ function GithubUser({username}) {
         try {
             const responce = await fetch(`https://api.github.com/users/${username}`) 
             const json = await responce.json()
-    
+            if (json.status === 403) {
+                console.log("bro, troppe chiamate. sembri uno stalker");
+            }
             setUser(json)
-
+            console.log(json);
         } catch (error) {
             setError(error)
             setUser(null)

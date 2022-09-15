@@ -22,7 +22,7 @@ function GithubUserList (){
                 return (
                     <div  key={Math.random()}>
 
-                        <Link to={`/users/${item}`} elements={<GithubUser username={item}/>}> {item}</Link>
+                        <Link to={`/users/${item}`}> {item}</Link>
 
                     </div>
                 )}

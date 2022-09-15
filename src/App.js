@@ -20,10 +20,8 @@ function App() {
       </div>
       )
     }}
-    >
-
-    </ToDoList>
-  )
+     />
+       )
 }
 
 export default App;

@@ -4,19 +4,21 @@ class ToDoList extends React.Component {
 
     state = {
         items: ["Go to gym", "Repair the car", "Watch react lesson"],
-        index:0
+        index: 0
     }
 
     handleAddItem = (event) => {
         event.preventDefault()
-        {event.target.elements.ToDo.value !== "" && this.setState((prevState) => ({
-            // items: prevState.items.concat(event.target.elements.ToDo.value)
-            items: [...prevState.items, event.target.elements.ToDo.value] 
-        }), 
-            () => {
-                event.target.elements.ToDo.value = "" 
-            } 
-        )}
+        {
+            event.target.elements.ToDo.value !== "" && this.setState((prevState) => ({
+                // items: prevState.items.concat(event.target.elements.ToDo.value)
+                items: [...prevState.items, event.target.elements.ToDo.value]
+            }),
+                () => {
+                    event.target.elements.ToDo.value = ""
+                }
+            )
+        }
     }
 
     handleClearList = (event) => {
@@ -33,13 +35,13 @@ class ToDoList extends React.Component {
             items: newItems
         }))
     }
+    
     render() {
         return (
-            
-                <div>
-                    {this.props.render(this.state.items,this.state.index,this.handleRemoveItem,this.handleAddItem,this.handleClearList)}
-                </div>
-        ) 
+            <div>
+                {this.props.render(this.state.items, this.state.index, this.handleRemoveItem, this.handleAddItem, this.handleClearList)}
+            </div>
+        )
     }
 }
 

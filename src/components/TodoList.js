@@ -42,7 +42,7 @@ class ToDoList extends React.Component {
                     <button type="reset" onClick={this.handleClearList}>Clear list</button>
                 </form>
                 <div>
-                    {this.props.render}
+                    {this.props.render(this.state.items,this.state.index,this.handleRemoveItem)}
                 </div>
             </div>);
     }

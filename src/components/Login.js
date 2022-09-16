@@ -22,10 +22,7 @@ class Login extends React.Component {
     handleLoginButton = () => {
         this.setState({
             onlogin:true
-        })
-        // non capisco perché la prima volta che premo il bottone in console onlogin è ancora falso ma la seconda volta è vero
-        console.log(this.state);
-    } 
+        })} 
  
     render() { 
         return (

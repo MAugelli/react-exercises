@@ -1,18 +1,23 @@
 import React from "react";
 
 class ToDoList extends React.Component {
+
     state = {
         items: ["Go to gym", "Repair the car", "Watch react lesson"],
     }
 
-    handleAddItem = (event) =>{
+    handleAddItem = (event) => {
         event.preventDefault()
-        this.setState( (prevState) => ({
+        this.setState((prevState) => ({
             // items: prevState.items.concat(event.target.elements.ToDo.value)
             items: [...prevState.items, event.target.elements.ToDo.value]
-        }))
+        }),
+            () => {
+                event.target.elements.ToDo.value = ""
+            } 
+        )
     }
- 
+
     render() {
         return (
             <div>
@@ -20,9 +25,9 @@ class ToDoList extends React.Component {
                     <input type="text" name="ToDo" />
                     <button type="submit">Add</button>
                 </form>
-                    <ul>{this.state.items.map(item =>
-                        <li key={item + Math.random()}>{item}</li>
-                    )}</ul>
+                <ul>{this.state.items.map(item =>
+                    <li key={item + Math.random()}>{item}</li>
+                )}</ul>
             </div>);
     }
 }

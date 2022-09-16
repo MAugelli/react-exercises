@@ -1,6 +1,6 @@
 function Welcome(props) {
     return (
-        <div>
+        <div className="welcome">
             <p>Hello, {props.name}!</p>
         </div>
     );

@@ -1,11 +1,12 @@
-import ToDoList from "./components/TodoList";
+import Welcome from "./components/Welcome";
 
 
 const App = () => {
     return ( 
-        <ToDoList />
+    <Welcome name="Jimmy"/>         
     );
 }
  
 export default App;
-
+ 
+ 

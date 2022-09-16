@@ -1,5 +1,5 @@
-import UncontrolledLogin from "./components/UncontrolledLogin ";
 
+import UncontrolledLogin from "./components/UncontrolledLogin ";
 
 const App = () => {
     return ( 
@@ -8,4 +8,3 @@ const App = () => {
 }
  
 export default App;
-

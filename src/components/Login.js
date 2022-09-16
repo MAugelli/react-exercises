@@ -22,9 +22,7 @@ class Login extends React.Component {
     handleLoginButton = () => {
         this.setState({
             onlogin:true
-        })
-        console.log(this.state);
-    } 
+        })} 
  
     render() { 
         return (
@@ -33,7 +31,8 @@ class Login extends React.Component {
                 <input type="text" name="username" value={this.state.username} onChange={this.handleImputChange}/>
                 <input type="password" name="password" value={this.state.password} onChange={this.handleImputChange}/>
                 <input type="checkbox" name="remember" checked={this.state.remember} onChange={this.handleImputChange}/>
-                <button disabled={this.state.password !== "" && this.state.name !== "" ? false : true} onClick={this.handleLoginButton}>Login</button>
+                <button disabled={this.state.password !== "" && this.state.name !== "" ? false : true} className={this.state.password.length < 8 ? "login-button-red" : "login-button-green"} onClick={this.handleLoginButton}>Login</button>
+
             </div>
         );
     }

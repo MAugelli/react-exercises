@@ -1,12 +1,11 @@
-import Welcome from "./components/Welcome";
+import Login from "./components/Login";
 
 
 const App = () => {
     return ( 
-    <Welcome name="Jimmy"/>         
+        <Login />
     );
 }
  
 export default App;
- 
- 
+

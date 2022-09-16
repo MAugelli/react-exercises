@@ -1,4 +1,9 @@
-.welcome{
-    background-color: aquamarine;
-    border: 2px solid blue ;
-}
+.login-button-green{
+    background-color: green;
+    border: 1px solid darkgreen ;
+} 
+
+.login-button-red{
+    background-color: red;
+    border: 1px solid darkred ;
+} 

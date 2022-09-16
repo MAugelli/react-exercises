@@ -4,6 +4,7 @@ class ToDoList extends React.Component {
 
     state = {
         items: ["Go to gym", "Repair the car", "Watch react lesson"],
+        index:0
     }
 
     handleAddItem = (event) => {
@@ -11,9 +12,9 @@ class ToDoList extends React.Component {
         {event.target.elements.ToDo.value !== "" && this.setState((prevState) => ({
             // items: prevState.items.concat(event.target.elements.ToDo.value)
             items: [...prevState.items, event.target.elements.ToDo.value] 
-        }),
+        }), 
             () => {
-                event.target.elements.ToDo.value = ""
+                event.target.elements.ToDo.value = "" 
             } 
         )}
     }
@@ -25,6 +26,13 @@ class ToDoList extends React.Component {
         }))
     }
 
+    handleRemoveItem = (event) => {
+        const newItems = this.state.items
+        newItems.splice(event.target.name, 1)
+        this.setState(() => ({
+            items: newItems
+        }))
+    }
     render() {
         return (
             <div>
@@ -33,9 +41,10 @@ class ToDoList extends React.Component {
                     <button type="submit">Add</button>
                     <button type="reset" onClick={this.handleClearList}>Clear list</button>
                 </form>
-                <ul>{this.state.items !== "" && this.state.items.map(item =>
-                    <li key={item + Math.random()}>{item}</li>
-                )}</ul>
+                <ul>{this.state.items !== "" && this.state.items.map((item, index = this.state.index ) =>
+                    <li key={item + Math.random()}  >{item}  <button name={index++} onClick={this.handleRemoveItem}>Remove</button></li>
+                )
+                } </ul>
             </div>);
     }
 }

@@ -10,4 +10,3 @@ class CounterDisplay extends React.Component {
     }
 } 
 
-export default CounterDisplay;

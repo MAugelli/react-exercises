@@ -1,10 +1,9 @@
 
-import Login from "./components/Login";
-
+import UncontrolledLogin from "./components/UncontrolledLogin ";
 
 const App = () => {
     return ( 
-        <Login />
+        <UncontrolledLogin/>
     );
 }
  

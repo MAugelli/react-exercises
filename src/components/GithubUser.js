@@ -14,9 +14,6 @@ function GithubUser() {
         try {
             const responce = await fetch(`https://api.github.com/users/${username}`) 
             const json = await responce.json()
-            if (json.status === 403) {
-                console.log("bro, troppe chiamate. sembri uno stalker");
-            }
             setUser(json)
             console.log(json);
         } catch (error) {

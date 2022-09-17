@@ -1,6 +1,5 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
-import GithubUser from "./GithubUser"
+import { Link, Outlet } from "react-router-dom"
 
 function GithubUserList (){
     const [users, setUsers] = useState([])
@@ -27,6 +26,8 @@ function GithubUserList (){
                     </div>
                 )}
                 )}
+
+                <Outlet />
             </div>);
     }
 

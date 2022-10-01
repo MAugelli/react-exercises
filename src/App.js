@@ -1,3 +1,4 @@
+
 import ClickCounter from "./components/ClickCounter";
 
 
@@ -11,5 +12,7 @@ const App = () => {
     );
 }
 
+
+ 
 export default App;
 

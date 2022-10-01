@@ -1,5 +1,6 @@
-import ClickCounter from "./components/ClickCounter";
 
+import ClickCounter from "./components/ClickCounter";
+s
 
 const App = () => {
     return ( 

@@ -3,12 +3,13 @@ import Container from "./components/Container";
 
 const App = () => {
     return ( 
-    <Container>
+
+    <Container title={"My React app"}>
       <h1>Hello Billy!</h1>
     </Container>
     );
 }
  
+
 export default App;
- 
- 
+

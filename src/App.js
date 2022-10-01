@@ -1,13 +1,11 @@
-import Counter from "./components/Counter";
+import GithubUser from "./components/GithubUser";
 
 
 const App = () => {
     return ( 
-      <Counter />
+        <GithubUser username="MAugelli" />
     );
 }
 
-
- 
 export default App;
 

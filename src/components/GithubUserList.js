@@ -1,14 +1,20 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import GithubUser from "./GithubUser"
 
 function GithubUserList (){
     const [users, setUsers] = useState([])
+    const [newUser, setNewUser] = useState("")
+
 
     function handleAddItem(event){
         event.preventDefault()
-        setUsers([...users,  event.target.elements.AddUser.value])
+        setNewUser(event.target.elements.AddUser.value)
     }
 
+    useEffect(()=>{
+        setUsers([...users,  newUser])
+    },[newUser])
+    
         return (
             <div>
                 <form onSubmit={handleAddItem}>

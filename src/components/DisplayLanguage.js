@@ -12,7 +12,8 @@ function DisplayLanguage() {
             {language => {
                 return (
                     <div>
-                        {String[language]}
+                        <h1>{String[language]}</h1> 
+
                     </div>
                 )
             }}

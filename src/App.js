@@ -1,12 +1,18 @@
 
-import Login from "./components/Login";
+import ClickCounter from "./components/ClickCounter";
 
+
+    function onCounterChange(i) {
+        console.log(i);
+    }
 
 const App = () => {
     return ( 
-        <Login />
+      <ClickCounter change={onCounterChange}/>
     );
 }
+
+
  
 export default App;
 

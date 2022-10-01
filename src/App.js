@@ -6,6 +6,6 @@ const App = () => {
         <GithubUser username="MAugelli" />
     );
 }
- 
+
 export default App;
 

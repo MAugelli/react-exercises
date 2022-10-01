@@ -1,8 +1,9 @@
-import Welcome from "./components/Welcome";
+
+import Sum from "./components/Sum";
 
 const App = () => {
   return (<div>
-    <Welcome name={"Jimmy"}/>
+      <Sum numbers={[1,2,3,4,5]} />
   </div>);
 }
 

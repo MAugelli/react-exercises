@@ -7,4 +7,7 @@ function Sum(props) {
     return ( <h1>Il somma dei numeri è {result}</h1> );
 }
 
-export default Sum;
+Sum.defaultProps = {numbers: [40,50,10]}
+
+export default Sum; 
+

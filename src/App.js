@@ -1,10 +1,12 @@
 
-import Sum from "./components/Sum";
+import ClickCounter from "./components/ClickCounter";
+s
 
 const App = () => {
-  return (<div>
-    <Sum />
-  </div>);
+    return ( 
+      <ClickCounter />
+    );
 }
-
+ 
 export default App;
+

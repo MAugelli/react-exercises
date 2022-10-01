@@ -13,6 +13,7 @@ function DisplayLanguage() {
                 return (
                     <div>
                         <h1>{String[language]}</h1> 
+
                     </div>
                 )
             }}

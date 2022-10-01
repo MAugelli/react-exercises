@@ -1,10 +1,10 @@
 
-import ClickCounter from "./components/ClickCounter";
-s
+import Login from "./components/Login";
+
 
 const App = () => {
     return ( 
-      <ClickCounter />
+        <Login />
     );
 }
  

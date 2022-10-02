@@ -1,11 +1,12 @@
-import GithubUser from "./components/GithubUser";
 
+import GithubUserList from "./components/GithubUserList";
 
 const App = () => {
     return ( 
-        <GithubUser username="MAugelli" />
+        <GithubUserList/>
     );
-}
+} 
+ 
 
 export default App;
 

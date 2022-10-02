@@ -18,7 +18,7 @@ function GithubUser({username}) {
         } catch (error) {
             setError(error)
             setUser(null)
-        } finally {
+        } finally { 
             setLoading(false)
         }
     }

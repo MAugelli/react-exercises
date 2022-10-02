@@ -1,3 +1,4 @@
+
 import { useCounter } from "./useCounter";
 
 function Counter({ initialValue = 0 }) {
@@ -13,6 +14,5 @@ function Counter({ initialValue = 0 }) {
         </div>
     );
 }
-
 
 export default Counter;

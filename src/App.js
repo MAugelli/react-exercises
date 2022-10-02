@@ -1,5 +1,5 @@
-import Counter from "./components/Counter"
 
+import Counter from "./components/Counter"
 
 const App = () => {
     return ( 
@@ -8,3 +8,4 @@ const App = () => {
 }
  
 export default App;
+

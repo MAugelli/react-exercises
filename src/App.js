@@ -1,3 +1,4 @@
+
 import GithubUser from "./components/GithubUser";
 
 
@@ -6,5 +7,5 @@ const App = () => {
         <GithubUser username="MAugelli" />
     );
 }
- 
+
 export default App;

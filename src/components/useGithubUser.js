@@ -8,13 +8,10 @@ function useGithubUser(username) {
     async function fetchGithubUser(username){
         setError(null)
         setLoading(true)
-
         try {
             const responce = await fetch(`https://api.github.com/users/${username}`) 
             const json = await responce.json()
-    
             setUser(json)
-
         } catch (error) {
             setError(error)
             setUser(null)
@@ -26,10 +23,8 @@ function useGithubUser(username) {
     useEffect (() => {
         fetchGithubUser(username)
     }, [username])
-
-    return{user, error, loading}
-
     
+    return{user, error, loading}
 }
 
 export default useGithubUser;

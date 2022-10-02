@@ -1,10 +1,12 @@
 
-import Counter from "./components/Counter"
+import FilteredList from "./components/FilteredList";
+
 
 const App = () => {
     return ( 
-      <Counter initialValue={10}/>
+      <FilteredList />
     );
 }
  
 export default App;
+

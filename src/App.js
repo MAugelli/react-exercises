@@ -7,6 +7,5 @@ const App = () => {
         <GithubUser username="MAugelli" />
     );
 }
- 
-export default App;
 
+export default App;

@@ -1,9 +1,10 @@
-import Form from "./components/Form";
+
+import GithubUser from "./components/GithubUser";
+
 
 const App = () => {
     return ( 
-      <Form/>
-
+        <GithubUser username="MAugelli" />
     );
 }
  

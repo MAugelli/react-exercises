@@ -1,10 +1,10 @@
 
-import FilteredList from "./components/FilteredList";
+import CarDetails from "./components/CarDetails";
 
 
 const App = () => {
     return ( 
-      <FilteredList />
+      <CarDetails initialDataImput={{model:"Fiat Panda", year:1996, color:"Red"}}/>
     );
 }
  

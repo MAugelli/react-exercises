@@ -1,12 +1,29 @@
 
-import CarDetails from "./components/CarDetails";
+import { useState } from "react";
+import DisplayLanguage from "./components/DisplayLanguage";
+import { LanguageContext } from "./components/LanguageContext";
 
 
-const App = () => {
+
+function App() {
+  const [language, setLanguage] = useState("en")
+
+  function handleLanguageChange(event){
+    setLanguage(event.target.value)
+  }
     return ( 
-      <CarDetails initialDataImput={{model:"Fiat Panda", year:1996, color:"Red"}}/>
-    );
-}
+         <div>
+            <select value={language} onChange={handleLanguageChange}>
+              <option value="en">English</option>
+              <option value="it">Italiano</option>
+            </select>
+         <LanguageContext.Provider value={language}>
+          <DisplayLanguage />
+         </LanguageContext.Provider>
+         </div>
+      )
+  }
+
+  
  
 export default App;
-

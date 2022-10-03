@@ -12,7 +12,7 @@ function ClickCounter() {
         <h2>Counter: {counter} </h2>
         <button onClick={handlerIncrementCounter}>Increment</button>
         <div>
-        <Link to="/"> Welcome</Link> | <Link to="/counter"> Counter </Link> | <Link to="/users/:username"> GitHub user </Link> 
+        {/* <Link to="/"> Welcome</Link> | <Link to="/counter"> Counter </Link> | <Link to="/users/:username"> GitHub user </Link>  */}
         </div>
     </div>);
 

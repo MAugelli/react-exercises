@@ -34,7 +34,7 @@ function GithubUser() {
         {loading && <h1>Caricamento...</h1>}
         {user && <h1>{user.name}</h1>}
         {error && <h1>C'è stato un errore</h1>}
-        <Link to="/"> Welcome</Link> | <Link to="/counter"> Counter </Link> | <Link to="/users/:username"> GitHub user </Link> 
+        {/* <Link to="/"> Welcome</Link> | <Link to="/counter"> Counter </Link> | <Link to="/users/:username"> GitHub user </Link>  */}
     </div> );
 }
 
